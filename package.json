@@ -1,0 +1,38 @@
+{
+  "name": "slidev-theme-9aia",
+  "version": "0.1.0",
+  "description": "VitePress-styled Slidev theme used across 9aia presentations",
+  "author": "9aia",
+  "license": "MIT",
+  "homepage": "https://github.com/9aia/slidev-theme-9aia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/9aia/slidev-theme-9aia"
+  },
+  "bugs": "https://github.com/9aia/slidev-theme-9aia/issues",
+  "keywords": [
+    "slidev-theme",
+    "slidev",
+    "vitepress"
+  ],
+  "engines": {
+    "slidev": ">=v0.47.0"
+  },
+  "slidev": {
+    "defaults": {
+      "colorSchema": "dark",
+      "fonts": {
+        "sans": "Inter",
+        "mono": "JetBrains Mono",
+        "weights": "400,500,600,700,800"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "slidev example.md --open",
+    "export": "slidev export example.md"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^53.0.0"
+  }
+}

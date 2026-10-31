@@ -1,0 +1,156 @@
+.slidev-page,
+.slidev-layout {
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-1);
+}
+
+.slidev-layout {
+  line-height: 1.7;
+}
+
+.slidev-layout ::selection {
+  background: var(--vp-c-brand-3);
+  color: #ffffff;
+}
+
+/* Headings — VitePress docs style */
+.slidev-layout h1 {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--vp-c-text-1);
+  margin-bottom: 0.75rem;
+}
+
+.slidev-layout h1 + p {
+  margin-top: -0.25rem;
+  color: var(--vp-c-text-2);
+  font-size: 1.125rem;
+}
+
+.slidev-layout h2 {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 1.375rem;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout h3 {
+  margin-top: 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.slidev-layout h4 {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Text */
+.slidev-layout p {
+  margin: 0.75rem 0;
+}
+
+.slidev-layout a {
+  color: var(--vp-c-brand-1);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.25s;
+}
+
+.slidev-layout a:hover {
+  color: var(--vp-c-brand-2);
+}
+
+.slidev-layout strong {
+  font-weight: 600;
+  color: var(--vp-c-text-1);
+}
+
+/* Lists */
+.slidev-layout ul,
+.slidev-layout ol {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.slidev-layout li {
+  margin: 0.25rem 0;
+}
+
+.slidev-layout li::marker {
+  color: var(--vp-c-text-3);
+}
+
+.slidev-layout li > p {
+  margin: 0.5rem 0;
+}
+
+/* Blockquote — like the VitePress docs quote */
+.slidev-layout blockquote {
+  margin: 1rem 0;
+  padding: 0 1rem;
+  border-left: 2px solid var(--vp-c-divider);
+  color: var(--vp-c-text-2);
+}
+
+.slidev-layout blockquote > p {
+  margin: 0;
+}
+
+.slidev-layout hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* Tables — VitePress docs style */
+.slidev-layout table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.slidev-layout tr {
+  border-top: 1px solid var(--vp-c-divider);
+  transition: background-color 0.5s;
+}
+
+.slidev-layout tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+.slidev-layout th,
+.slidev-layout td {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.5rem 1rem;
+}
+
+.slidev-layout th {
+  text-align: left;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  background-color: var(--vp-c-bg-soft);
+}
+
+/* Inline code — brand-colored on muted background, like VitePress */
+.slidev-layout :not(pre) > code {
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-size: var(--vp-code-font-size);
+  color: var(--vp-code-color);
+  background-color: var(--vp-code-bg);
+  transition: color 0.25s, background-color 0.5s;
+}
+
+/* Code blocks */
+.slidev-layout .slidev-code {
+  background: var(--vp-code-block-bg);
+  border-radius: 8px;
+}

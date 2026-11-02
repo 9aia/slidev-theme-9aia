@@ -206,3 +206,55 @@
   max-width: 42rem;
   font-size: 1.25rem;
 }
+
+/* --- cover, redesigned ---------------------------------------------------
+ * The centred stack gave three lines of near-equal width: no hierarchy, and it
+ * did not line up with the left-aligned content of every other slide. Now:
+ * accent bar, name, tagline, promise, meta — one left edge, clear steps.
+ */
+.slidev-layout.cover {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.slidev-layout.cover::before {
+  content: '';
+  flex: none;
+  width: 4rem;
+  height: 4px;
+  margin-bottom: 2rem;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #bd34fe, #41d1ff);
+}
+
+.slidev-layout.cover h1 {
+  /* keep the box hugging the word so the gradient sweeps across the letters */
+  align-self: flex-start;
+  background-image: linear-gradient(90deg, #bd34fe 0%, #a855f7 50%, #41d1ff 100%);
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout.cover h1 + p {
+  margin-top: 1.25rem;
+  max-width: 34rem;
+  font-size: 1.5rem;
+  line-height: 1.35;
+}
+
+.slidev-layout.cover h1 + p + p {
+  margin-top: 0.75rem;
+  max-width: 40rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--vp-c-text-3);
+}
+
+.slidev-layout.cover p + p:last-child {
+  margin-top: 2.5rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  color: var(--vp-c-text-3);
+}

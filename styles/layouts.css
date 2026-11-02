@@ -170,3 +170,39 @@
   font-size: 1.125rem;
   color: var(--vp-c-text-2);
 }
+
+/* --- density & balance ---------------------------------------------------
+ * Decks were rendering top-pinned with 25-50% dead space at the bottom, the
+ * `statement` layout stranded its bullets, and the `fact` caption ran edge to
+ * edge. These rules are appended last so they win at equal specificity.
+ */
+
+/* Centre the content block: short slides stop floating in the top half. */
+.slidev-layout.default,
+.slidev-layout.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* A centred statement can still carry a short list — keep the list readable. */
+.slidev-layout.statement ul,
+.slidev-layout.statement ol,
+.slidev-layout.fact ul,
+.slidev-layout.fact ol {
+  display: inline-block;
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+.slidev-layout.statement p:first-of-type {
+  max-width: 48rem;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  color: var(--vp-c-text-1);
+}
+
+.slidev-layout.fact h1 + p {
+  max-width: 42rem;
+  font-size: 1.25rem;
+}

@@ -154,3 +154,17 @@
   background: var(--vp-code-block-bg);
   border-radius: 8px;
 }
+
+/* --- density -------------------------------------------------------------
+ * VitePress table padding is generous for docs pages and too wide for a slide:
+ * a 9-row stack table has to fit inside 16:9 without touching the edges.
+ */
+.slidev-layout th,
+.slidev-layout td {
+  padding: 0.4rem 0.75rem;
+  font-size: 0.95em;
+}
+
+.slidev-layout table {
+  margin: 0.75rem 0;
+}

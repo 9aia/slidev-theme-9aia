@@ -17,6 +17,9 @@ withDefaults(defineProps<{
 <style>
 .vp-badge {
   display: inline-block;
+  /* layouts are flex columns since v0.1.1: without this the badge stretches
+     to the full slide width instead of hugging its text */
+  align-self: flex-start;
   margin-left: 2px;
   border: 1px solid transparent;
   border-radius: 12px;

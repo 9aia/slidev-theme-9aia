@@ -1,0 +1,6 @@
+# slidev-theme-9aia — theme package. No docs worktree; `example.md`
+# is the dev fixture, not the org docs convention, so the
+# docs-site contract rules are exempt.
+
+[check]
+skip = ["docs-site", "docs-check-script"]

@@ -4,4 +4,4 @@ dist
 *.log
 .DS_Store
 .slidev
-slides-export*.pdf
+*-export.pdf

@@ -1,0 +1,8 @@
+allowBuilds:
+  playwright-chromium: true
+permissions:
+  '@slidev/cli':
+    skills: true
+skills:
+  dirs:
+    - .agents/skills

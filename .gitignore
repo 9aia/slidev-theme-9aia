@@ -5,3 +5,6 @@ dist
 .DS_Store
 .slidev
 *-export.pdf
+
+# myco worktree mount point (created by `myco init`)
+project/

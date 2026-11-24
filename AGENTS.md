@@ -34,3 +34,27 @@ pnpm run export   # slidev export example.md (PDF/PPTX/PNG)
 This repo owns the Slidev theme only. Sibling
 `vitepress-theme-9aia` is the VitePress counterpart; the theme is
 consumed by presentation decks across the org.
+
+## Specs
+
+`specs/<name>.toml` is this repo's mimus-standard conformance spec —
+approval-gated. Any change requires a live org proposal
+(`proposal-NNNN`, status open|done) referenced in the spec header or
+commit range, and no coverage regression vs merge-base. Guard:
+workspace `../../scripts/spec-guard.py`; sweep:
+`../../scripts/standard.sh`; regenerate coverage only via
+`../../scripts/gen-repo-specs.py`.
+
+<!-- myco:agent-awareness -->
+
+## Agent awareness
+
+- Session start / any work discussion: run `myco status --prompt`
+  before proposing next steps — know the board first.
+- User describes new work → offer to capture it (`myco todo add`,
+  `issue new`, `proposal new`). Don't wait to be asked.
+- Picking up a task: `myco resume <ID>` is the briefing.
+- Wrapping up: `myco handoff <ID>` anything resumable; keep statuses
+  honest (claimed → in-progress → blocked/done).
+
+<!-- /myco:agent-awareness -->
